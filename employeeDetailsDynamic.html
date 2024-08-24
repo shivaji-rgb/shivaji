@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Employee details </title>
+</head>
+<body>
+      <script>
+               var name,basicSal,pf,hra,totalSal,address,companyName,designation;
+               name = prompt("enter the employee name ");
+               companyName = prompt("enter the company name of the employee");
+               designation = prompt("enter the designstion of the employee");
+               address = prompt("enter the address of the employee");
+               //basicSal = parseInt(prompt("enter the basic sal of employee"));
+               basicSal = prompt("enter the basic sal of employee");
+               basicSal = parseInt(basicSal);
+
+
+                 pf = 14/100 * (basicSal);
+                 hra = 24/100 * (basicSal);
+
+                 totalSal = basicSal + pf + hra;
+
+
+                 console.log("name :"+name);
+                 console.log("companyName :"+companyName );
+                 console.log("designation :"+designation);
+                 console.log("address :"+address);
+                 
+                 console.log("basic salary :"+basicSal);
+                 console.log("PF :"+pf);
+                 console.log("HRA :"+hra);
+                 console.log("total salary of the employee :"+totalSal);
+
+      </script>
+    
+</body>
+</html>
